@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="spinner.css" />
+    <title>OpenAI Image Generation</title>
+    <style>
+      .image-container {
+        height: 200px;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-body">
+      <form id="image-form">
+        <h1>Describe An Image</h1>
+
+        <input type="text" id="prompt" placeholder="Enter Text" />
+        <select name="size" id="size">
+          <option value="small">Small</option>
+          <option value="medium" selected>Medium</option>
+          <option value="large">Large</option>
+        </select>
+
+        <button type="submit" class="btn">Generate</button>
+      </form>
+    </div>
+    <div class="image-container">
+      <h2 class="msg"></h2>
+      <img src="" alt="" id="image" />
+    </div>
+    <div class="spinner"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
